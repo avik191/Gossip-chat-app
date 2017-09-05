@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.hi.gossip.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/display_image"
+        android:src="@drawable/avatar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/display_name"
+            android:text="Display Name"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:id="@+id/display_status"
+            android:text="Hi There ! I am using Gossip Chat"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="CHANGE IMAGE"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:background="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:id="@+id/change_image"/>
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:layout_width="210dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="CHANGE STATUS"
+            android:background="#fff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/change_status"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

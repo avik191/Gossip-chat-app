@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/chat_background"
+    android:layout_height="match_parent"
+    tools:context="com.example.hi.gossip.ChatActivity">
+
+    <include layout="@layout/app_bar_layout"
+             android:id="@+id/chat_app_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle_message"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_above="@+id/linearLayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <!--<ImageButton-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:tint="#fff"-->
+            <!--android:padding="10dp"-->
+            <!--android:id="@+id/add_files"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@mipmap/ic_add_black_24dp"-->
+            <!--android:background="@drawable/customized_blue_button"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type a message"
+            android:padding="5dp"
+            android:id="@+id/add_msg"
+            android:textSize="18sp"
+            android:textColor="@color/greytext"
+            android:background="@drawable/input_box"
+            android:layout_weight="8"
+            android:layout_margin="5dp"/>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:layout_weight="2"
+            android:id="@+id/send_msg"
+            android:tint="#fff"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_send_black_24dp"
+            android:background="@drawable/customized_blue_button"/>
+    </LinearLayout>
+
+</RelativeLayout>

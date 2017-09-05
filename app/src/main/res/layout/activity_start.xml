@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hi.gossip.StartActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv"
+        android:src="@drawable/screen_logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Welcome to Gossip"
+        android:textSize="25sp"
+        android:layout_below="@+id/iv"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/tv1"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Chat App"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv1"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:padding="12dp"
+        android:layout_marginTop="66dp"
+        android:id="@+id/login"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="220dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Need An Account ?"
+        android:background="#fff"
+        android:padding="12dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/register"
+        android:layout_below="@+id/login"
+        android:layout_alignStart="@+id/login"/>
+
+</RelativeLayout>
