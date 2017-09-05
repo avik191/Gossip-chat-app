@@ -23,4 +23,4 @@ Firebase is a mobile and web application development platform developed by Fireb
 the web or app.
 **https://firebase.google.com/**
 
-**Get app here :- https://github.com/avik191/Blogger/blob/master/Blogger/apk/blogger.apk **
+**Get app here :- https://github.com/avik191/Gossip-chat-app/blob/master/apk/gossip.apk **
